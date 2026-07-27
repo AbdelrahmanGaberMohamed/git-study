@@ -1,5 +1,4 @@
-# main function prints "hello world!" to the console
-def main(): 
+# main function prints "hello world!"
     print("hello world!")
     return 0
 main()
