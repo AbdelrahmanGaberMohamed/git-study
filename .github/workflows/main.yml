@@ -1,6 +1,6 @@
-name: first-workflow
+name: first-workflow # workflow name
 
-on:
+on:                  # trigger workflow on push or pull request events but only for the main branch
   push:
     branches: 
       - main
@@ -8,10 +8,10 @@ on:
     branches:
       - main
 
-jobs:
-  checkout:
-    runs-on: ubuntu-latest
-    steps:
+jobs:                # jobs to run
+  checkout:          # job name
+    runs-on: ubuntu-latest      # runner environment
+    steps:                      # steps to run in the job
       - name: checkout code
         uses: actions/checkout@v6.1.0
       - name: list repository files
