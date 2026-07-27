@@ -27,6 +27,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: run main code
-        run: python3 src/main.py
+        run: python3 ./src/main.py
       - name: run code tests
-        run: bash src/test.sh
+        run: bash ./src/test.sh
