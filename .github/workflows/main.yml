@@ -13,5 +13,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4.4.0
-      - name: run main.py
-        run: python3 main.py
+      - name: Install apache2
+        run: apt install apache2 -y
+      - name: Add our webpage to the server
+        run: cp index.html /var/www/html
+      - name: Start webserver
+        run: systemctl enable --now apache2
+      - name: Run testing bash script
+        run: sh test.sh
