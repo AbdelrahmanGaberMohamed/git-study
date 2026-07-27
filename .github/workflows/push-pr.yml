@@ -15,17 +15,11 @@ jobs:
     steps:
       - name: log action
         run: echo "Push or pull request event triggered on python files"
-  checkout:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
-        uses: actions/checkout@v4.2.2
-      - name: list repository files
-        run: pwd; ls -la 
-  test:
-    needs: checkout
-    runs-on: ubuntu-latest
-    steps:
+        uses: actions/checkout@v6.1.0
       - name: run main code
         run: python3 src/main.py
       - name: run code tests
