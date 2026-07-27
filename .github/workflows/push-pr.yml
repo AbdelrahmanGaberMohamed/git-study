@@ -1,0 +1,17 @@
+name: push-pr.yml
+on:
+  push:
+    branches:
+      - main
+      - "release/**"
+    paths:
+      - "**.py"
+  pull_request:
+    branches:
+      - main
+jobs:
+  log:
+    runs-on: ubuntu-latest
+    steps:
+      - name: log action
+        run: echo "Push or pull request event triggered on python files"

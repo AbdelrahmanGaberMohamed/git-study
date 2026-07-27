@@ -4,9 +4,13 @@ on:                  # trigger workflow on push or pull request events but only 
   push:
     branches: 
       - main
+    paths:
+      - ".github/workflows/**.yml"
   pull_request:
     branches:
       - main
+    paths:
+      - ".github/workflows/**.yml"
 
 jobs:                # jobs to run
   checkout:          # job name
