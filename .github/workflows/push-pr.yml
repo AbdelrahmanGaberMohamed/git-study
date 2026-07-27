@@ -26,5 +26,7 @@ jobs:
     needs: checkout
     runs-on: ubuntu-latest
     steps:
-      - name: test code
-        run: sh src/test.sh
+      - name: run main code
+        run: python3 src/main.py
+      - name: run code tests
+        run: bash src/test.sh
