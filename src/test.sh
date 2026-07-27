@@ -1,8 +1,8 @@
 #!/bin/bash
 # This script runs the tests for the project.
 # Exit codes:
-# 0 - All tests passed
-# 1 - Some tests failed
+# 0 - tests passed
+# 1 - tests failed
 
 echo "Running tests..."
 ExpectedOutput="hello world!"
