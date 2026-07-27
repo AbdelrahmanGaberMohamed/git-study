@@ -13,5 +13,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4.4.0
-      - name: log pull_request
-        run: echo "Pull request event triggered"
+      - name: log action
+        run: echo "Push or pull request event triggered"
