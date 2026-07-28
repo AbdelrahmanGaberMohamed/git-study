@@ -1,5 +1,6 @@
 name: manual
 on: 
+  repository_dispatch: 
   workflow_dispatch:
     inputs:
       environment:
