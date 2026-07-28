@@ -1,5 +1,4 @@
 on:
-    workflow_dispatch: 
     schedule:
         - cron: '*/5 * * * *' # run every 5 minutes
 jobs:
