@@ -11,3 +11,7 @@ jobs:
           then
             echo "::warning:: running a derpicated function"
           fi
+      - name: set api name
+        run: echo"API_NAME=my-api" >> $GITHUB_ENV
+      - name: log api name
+        run: echo "$GITHUB_ENV.API_NAME"
