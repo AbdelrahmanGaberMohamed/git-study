@@ -15,5 +15,5 @@ jobs:
         run: echo "API_NAME=my-api" >> $GITHUB_ENV
       - name: log api name
         run: |
-          echo "::addmask::$API_NAME"
+          echo "::add-mask::$API_NAME"
           echo "$API_NAME"
