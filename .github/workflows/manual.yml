@@ -24,3 +24,5 @@ jobs:
     steps:
       - name: deploy application
         run: echo "Deploying application to ${{ inputs.environment }} ..."
+      - name: get secrets
+        run: echo "${{ secrets.API_KEY }}"
